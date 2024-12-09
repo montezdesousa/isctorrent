@@ -3,7 +3,6 @@ package com.isctorrent.gui;
 import com.isctorrent.logic.Node;
 import com.isctorrent.logic.WorkFolder;
 import com.isctorrent.logic.messages.FileSearchResult;
-
 import java.awt.*;
 import java.io.File;
 import java.util.HashMap;
@@ -46,7 +45,13 @@ public class MainWindow {
     thisNode.startServerAsync();
 
     JFrame frame = new JFrame(
-      "Port NodeAddress [address=localhost" + ", port=" + port + "]"
+      "[address=localhost" +
+      ", port=" +
+      port +
+      "]" +
+      " | Folder [" +
+      folderPath +
+      "]"
     );
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(GUI_WIDTH, GUI_HEIGHT);
