@@ -27,7 +27,7 @@ public class AddNodeWindow {
     connectFrame.add(addressField, gbc);
 
     JLabel portLabel = new JLabel("Port:");
-    JTextField portField = new JTextField("8082");
+    JTextField portField = new JTextField("8080");
     gbc.gridx = 0;
     gbc.gridy = 1;
     gbc.fill = GridBagConstraints.NONE;

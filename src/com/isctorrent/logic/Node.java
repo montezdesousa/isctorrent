@@ -241,7 +241,7 @@ public class Node {
   public void download(String fileName, List<FileSearchResult> results) {
     System.out.println("[INFO] Downloading " + results);
     try {
-      DownloadTasksManagerWithLocks manager = new DownloadTasksManagerWithLocks(
+      DownloadTasksManager manager = new DownloadTasksManager(
         fileName,
         this.getWorkFolder()
       );

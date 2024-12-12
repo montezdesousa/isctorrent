@@ -49,7 +49,7 @@ public class MainWindow {
       ", port=" +
       port +
       "]" +
-      " | Folder [" +
+      " | [folder=" +
       folderPath +
       "]"
     );
